@@ -248,6 +248,7 @@ This analogy perfectly explains how APIs work in simple terms:
 
 
 ## Real-World API Examples
+![image](https://github.com/user-attachments/assets/39276f8f-4fa5-4a45-9f0e-f47cc399c5ec)
 
 ### 1. **E-commerce Website:**
 - Search for products → API → Database query → Results
@@ -306,9 +307,8 @@ Before APIs existed, websites were built using a completely different architectu
 
 ### How Monolithic Architecture Works
 
-```
-Frontend Form → Submit → Backend Function → Database Query → Results → Display
-```
+![image](https://github.com/user-attachments/assets/1ca6af84-34ba-4d3b-99f5-fb901b8f8c3d)
+
 
 **Key Characteristics:**
 - **Single Application:** Frontend and backend are part of one software
@@ -316,7 +316,6 @@ Frontend Form → Submit → Backend Function → Database Query → Results →
 - **Tightly Coupled:** Components are interdependent
 - **Direct Communication:** Frontend directly calls backend functions
 
----
 
 ## Why Monolithic Architecture Became Problematic
 
@@ -392,7 +391,8 @@ Companies realized they needed:
    - Feature parity maintenance
    - Bug fixing across all platforms
 
----
+![image](https://github.com/user-attachments/assets/0ea87778-edfa-468e-a321-b444b2d5e3db)
+
 
 ## The API Solution
 
@@ -405,11 +405,8 @@ Companies realized they needed:
 ```
 
 **After (Decoupled):**
-```
-[Frontend] ← API ← [Backend] ← [Database]
-Separate     Bridge   Separate   Separate
-Application          Application
-```
+![image](https://github.com/user-attachments/assets/beed2da1-2aa8-4334-b5e0-b52f43bbf16f)
+
 
 #### Key Changes
 1. **Backend becomes independent application**
@@ -459,15 +456,8 @@ Process: URL Hit → API → Backend Function → Database → Response
 ### The Unified Architecture
 
 #### New Structure
-```
-                    [Database]
-                        ↑
-                   [Backend]
-                        ↑
-                     [API]
-                   ↙   ↑   ↘
-[Web Frontend] [Android] [iOS]
-```
+![image](https://github.com/user-attachments/assets/45aa6874-9d37-4fd8-8d28-9f2a268d23b4)
+
 
 #### Benefits of This Architecture
 
@@ -505,9 +495,12 @@ Process: URL Hit → API → Backend Function → Database → Response
 
 #### Why JSON?
 **Problem:** Different platforms use different programming languages
+![image](https://github.com/user-attachments/assets/82d57b93-145f-415c-9b59-66d5a529b240)
+
 - MakeMyTriip: Java
 - Yatra: Python  
 - Ixigo: PHP
+
 
 **Solution:** Universal data format that all languages understand
 
