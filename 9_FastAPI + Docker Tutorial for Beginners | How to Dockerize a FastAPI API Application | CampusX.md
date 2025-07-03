@@ -1,19 +1,5 @@
 # FastAPI + Docker Tutorial for Beginners | How to Dockerize a FastAPI API Application | CampusX 
 
-# Complete Guide: Dockerizing FastAPI Insurance Premium Prediction API
-
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Prerequisites](#prerequisites)
-3. [Setup Requirements](#setup-requirements)
-4. [Step-by-Step Dockerization Process](#step-by-step-dockerization-process)
-5. [Dockerfile Explained](#dockerfile-explained)
-6. [Testing the Dockerized Application](#testing-the-dockerized-application)
-7. [Best Practices](#best-practices)
-8. [Troubleshooting](#troubleshooting)
-
----
-
 ## Project Overview
 
 ### What is this project?
@@ -31,7 +17,6 @@ This is a Machine Learning API built with **FastAPI** that predicts insurance pr
 3. **API Improvement**: Enhanced the basic API with industry-grade best practices
 4. **Dockerization**: Current step - containerizing the application
 
----
 
 ## Prerequisites
 
@@ -41,12 +26,15 @@ This is a Machine Learning API built with **FastAPI** that predicts insurance pr
 - **Command Line Interface**
 - **Basic Python/ML concepts**
 
+Docker for Machine Learning | Docker Crash Course | CampusX
+https://youtu.be/GToyQTGDOS4?si=4B_GQuJ3hyYZQWxQ
+
 ### System Requirements:
 - Docker Desktop installed
 - Active internet connection
 - Minimum 4GB RAM (Docker can be resource-intensive)
 
----
+![image](https://github.com/user-attachments/assets/083fda7b-70ff-4fc3-8545-66961191c34d)
 
 ## Setup Requirements
 
@@ -77,7 +65,6 @@ docker info
 
 **Important:** Your Docker Hub username becomes part of your image name format: `username/repository-name`
 
----
 
 ## Step-by-Step Dockerization Process
 
@@ -207,8 +194,6 @@ docker run -d -p 8000:8000 tweakster24/insurance-premium-api
   "occupation": "Retired"
 }
 ```
-
----
 
 ## Dockerfile Explained
 
